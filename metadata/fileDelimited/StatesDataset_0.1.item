@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_x7epoUVnEee0XqjFbtTzZQ" name="StatesDataset" dataPackage="_x7epokVnEee0XqjFbtTzZQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/adity/Desktop/Talend/Datasets/StatesDataset.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_x7epokVnEee0XqjFbtTzZQ" name="default" dataManager="_x7epoUVnEee0XqjFbtTzZQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_x7epo0VnEee0XqjFbtTzZQ" id="_950V0EVlEee0XqjFbtTzZQ" label="US_States">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_x7eppEVnEee0XqjFbtTzZQ" label="State_Name" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_x7eppUVnEee0XqjFbtTzZQ" label="State_Code" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

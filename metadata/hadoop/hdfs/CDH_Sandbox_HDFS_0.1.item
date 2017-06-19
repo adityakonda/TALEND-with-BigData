@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendHDFS:HDFSConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendHDFS="http://www.talend.org/hdfs" xmi:id="_0KkQwE1REeeQlbaOTH5Thg" name="CDH_Sandbox_HDFS" label="CDH_Sandbox_HDFS" relativeHadoopClusterId="_liGLgE1REeeQlbaOTH5Thg" userName="cloudera" rowSeparator="&quot;\n&quot;" fieldSeparator="&quot;;&quot;"/>

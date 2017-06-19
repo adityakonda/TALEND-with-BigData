@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_uj6OAFUXEeev44rBQLO_Rg" comment="connectionComment" label="connectionLabel" dataPackage="_uj6OAVUXEeev44rBQLO_Rg"/>
+  <TalendMetadata:GenericPackage xmi:id="_uj6OAVUXEeev44rBQLO_Rg" dataManager="_uj6OAFUXEeev44rBQLO_Rg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_uj6OAlUXEeev44rBQLO_Rg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uj6OA1UXEeev44rBQLO_Rg" name="No_Customer" id="4191" label="No_Customer" length="-1" precision="-1" sourceType="" talendType="id_Integer">
+        <initialValue xmi:id="_uj6OBFUXEeev44rBQLO_Rg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uj6OBVUXEeev44rBQLO_Rg" name="state" id="4186" label="state" length="2147483647" sourceType="STRING" talendType="id_String">
+        <initialValue xmi:id="_uj6OBlUXEeev44rBQLO_Rg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

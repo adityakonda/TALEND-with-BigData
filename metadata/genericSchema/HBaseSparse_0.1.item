@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_0BCZwE-gEeead4mVbqPuUw" name="repository.metadataGenericSchema" dataPackage="_0BCZwU-gEeead4mVbqPuUw"/>
+  <TalendMetadata:GenericPackage xmi:id="_0BCZwU-gEeead4mVbqPuUw" name="repository.metadataGenericSchema" dataManager="_0BCZwE-gEeead4mVbqPuUw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_0BCZwk-gEeead4mVbqPuUw" id="_nOq6gE-gEeead4mVbqPuUw" label="Sparse">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0BCZw0-gEeead4mVbqPuUw" name="ID" label="ID" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0BCZxE-gEeead4mVbqPuUw" name="Jan" label="Jan" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0BCZxU-gEeead4mVbqPuUw" name="Feb" label="Feb" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0BCZxk-gEeead4mVbqPuUw" name="Mar" label="Mar" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0BCZx0-gEeead4mVbqPuUw" name="Apr" label="Apr" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0BCZyE-gEeead4mVbqPuUw" name="May" label="May" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0BCZyU-gEeead4mVbqPuUw" name="Jun" label="Jun" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0BCZyk-gEeead4mVbqPuUw" name="Jul" label="Jul" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0BCZy0-gEeead4mVbqPuUw" name="Aug" label="Aug" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0BCZzE-gEeead4mVbqPuUw" name="Sep" label="Sep" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0BCZzU-gEeead4mVbqPuUw" name="Oct" label="Oct" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0BCZzk-gEeead4mVbqPuUw" name="Nov" label="Nov" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0BCZz0-gEeead4mVbqPuUw" name="Dec" label="Dec" length="-1" talendType="id_Integer"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

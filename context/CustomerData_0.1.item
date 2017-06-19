@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_IFg9UEehEeeZp8iWItej5w" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_IFg9UUehEeeZp8iWItej5w" comment="" name="CustomerData_RowSeparator" prompt="CustomerData_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+  <contextParameter xmi:id="_IFg9UkehEeeZp8iWItej5w" comment="" name="CustomerData_File" prompt="CustomerData_File?" promptNeeded="false" type="id_File" value="C:/Users/adity/Desktop/Talend/Datasets/CustomerData.txt"/>
+  <contextParameter xmi:id="_IFg9U0ehEeeZp8iWItej5w" comment="" name="CustomerData_Encoding" prompt="CustomerData_Encoding?" promptNeeded="false" type="id_String" value="US-ASCII"/>
+  <contextParameter xmi:id="_IFg9VEehEeeZp8iWItej5w" comment="" name="CustomerData_FieldSeparator" prompt="CustomerData_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;\t&quot;"/>
+  <contextParameter xmi:id="_IFg9VUehEeeZp8iWItej5w" comment="" name="CustomerData_Header" prompt="CustomerData_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+</talendfile:ContextType>

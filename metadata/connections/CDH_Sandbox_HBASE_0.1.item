@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_0Kc8AE1REeeQlbaOTH5Thg" name="CDH_Sandbox_HBASE" id="_0KTLAE1REeeQlbaOTH5Thg" label="CDH_Sandbox_HBASE" dataPackage="_0Kc8HE1REeeQlbaOTH5Thg" DatabaseType="HBase" URL="127.0.0.1" Port="2181" Username="aditya" Password="" ServerName="quickstart.cloudera" SID="HBase" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="HBASE" StandardSQL="true">
+    <taggedValue xmi:id="_8uIokE-nEeeed_VJ_n6OZg" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="__ZteAE-nEeeed_VJ_n6OZg" tag="Status" value=""/>
+    <taggedValue xmi:id="__ZteAU-nEeeed_VJ_n6OZg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="__ZteAk-nEeeed_VJ_n6OZg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="__ZteA0-nEeeed_VJ_n6OZg" tag="Description" value=""/>
+    <taggedValue xmi:id="__ZteBE-nEeeed_VJ_n6OZg" tag="Author" value=""/>
+    <taggedValue xmi:id="__ZteBU-nEeeed_VJ_n6OZg" tag="otherParameter"/>
+    <parameters xmi:id="_0Kc8AU1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_DB_PORT" value="2181"/>
+    <parameters xmi:id="_0Kc8Ak1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_USE_YARN" value="true"/>
+    <parameters xmi:id="_0Kc8A01REeeQlbaOTH5Thg" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="quickstart.cloudera:8030"/>
+    <parameters xmi:id="_0Kc8BE1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="true"/>
+    <parameters xmi:id="_0Kc8BU1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_NAME_NODE_URL" value="hdfs://quickstart.cloudera:8020"/>
+    <parameters xmi:id="_0Kc8Bk1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_USERNAME" value="aditya"/>
+    <parameters xmi:id="_0Kc8B01REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HADOOP_CLUSTER_ID" value="_liGLgE1REeeQlbaOTH5Thg"/>
+    <parameters xmi:id="_0Kc8CE1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_JOB_HISTORY_PRINCIPAL" value="mapred/_HOST@EXAMPLE.COM"/>
+    <parameters xmi:id="_0Kc8CU1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HBASE_VERSION" value="Cloudera_CDH5_8"/>
+    <parameters xmi:id="_0Kc8Ck1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_JOB_TRACKER_URL" value="quickstart.cloudera:8032"/>
+    <parameters xmi:id="_0Kc8C01REeeQlbaOTH5Thg" key="CONN_PARA_KEY_JOBHISTORY_ADDRESS" value="quickstart.cloudera:10020"/>
+    <parameters xmi:id="_0Kc8DE1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HIVE_VERSION" value="Cloudera_CDH5_8"/>
+    <parameters xmi:id="_0Kc8DU1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_USE_DATANODE_HOSTNAME" value="true"/>
+    <parameters xmi:id="_0Kc8Dk1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_DB_SERVER" value="quickstart.cloudera"/>
+    <parameters xmi:id="_0Kc8D01REeeQlbaOTH5Thg" key="CONN_PARA_KEY_DB_TYPE" value="HBase"/>
+    <parameters xmi:id="_0Kc8EE1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_MAPRDB_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+    <parameters xmi:id="_0Kc8EU1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_JOB_TRACKER_PRINCIPAL" value="yarn/_HOST@EXAMPLE.COM"/>
+    <parameters xmi:id="_0Kc8Ek1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HIVE_DISTRIBUTION" value="CLOUDERA"/>
+    <parameters xmi:id="_0Kc8E01REeeQlbaOTH5Thg" key="CONN_PARA_KEY_MAPRDB_VERSION" value="Cloudera_CDH5_8"/>
+    <parameters xmi:id="_0Kc8FE1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_MAPRDB_DISTRIBUTION" value="CLOUDERA"/>
+    <parameters xmi:id="_0Kc8FU1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_USE_KRB" value="false"/>
+    <parameters xmi:id="_0Kc8Fk1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HBASE_DISTRIBUTION" value="CLOUDERA"/>
+    <parameters xmi:id="_0Kc8F01REeeQlbaOTH5Thg" key="CONN_PARA_KEY_STAGING_DIRECTORY" value="/user"/>
+    <parameters xmi:id="_0Kc8GE1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_NAME_NODE_PRINCIPAL" value="hdfs/_HOST@EXAMPLE.COM"/>
+    <parameters xmi:id="_0Kc8GU1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_DB_PRODUCT" value="HBASE"/>
+    <parameters xmi:id="_0Kc8Gk1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HIVE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+    <parameters xmi:id="_0Kc8G01REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HBASE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+    <parameters xmi:id="_8sPLIE-nEeeed_VJ_n6OZg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_0Kc8HE1REeeQlbaOTH5Thg" name="HBase" dataManager="_0Kc8AE1REeeQlbaOTH5Thg"/>
+</xmi:XMI>

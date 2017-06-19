@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_fC4K0Eb6EeezMOtyjT1clQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_fC4K0Ub6EeezMOtyjT1clQ" comment="" name="CSVTestData_File" prompt="CSVTestData_File?" promptNeeded="false" type="id_File" value="C:/Users/adity/Desktop/Talend/Datasets/TestData.csv"/>
+  <contextParameter xmi:id="_fC4K0kb6EeezMOtyjT1clQ" comment="" name="CSVTestData_FieldSeparator" prompt="CSVTestData_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  <contextParameter xmi:id="_fC4K00b6EeezMOtyjT1clQ" comment="" name="CSVTestData_RowSeparator" prompt="CSVTestData_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+  <contextParameter xmi:id="_fC4K1Eb6EeezMOtyjT1clQ" comment="" name="CSVTestData_Encoding" prompt="CSVTestData_Encoding?" promptNeeded="false" type="id_String" value="US-ASCII"/>
+  <contextParameter xmi:id="_fC4K1Ub6EeezMOtyjT1clQ" comment="" name="CSVTestData_Header" prompt="CSVTestData_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+</talendfile:ContextType>

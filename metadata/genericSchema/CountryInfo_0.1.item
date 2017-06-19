@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_Keu0cUfCEeeZp8iWItej5w" name="repository.metadataGenericSchema" dataPackage="_Keu0ckfCEeeZp8iWItej5w"/>
+  <TalendMetadata:GenericPackage xmi:id="_Keu0ckfCEeeZp8iWItej5w" name="repository.metadataGenericSchema" dataManager="_Keu0cUfCEeeZp8iWItej5w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Keu0c0fCEeeZp8iWItej5w" id="_zzYd4EfBEeeZp8iWItej5w" label="countryinfo">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Keu0dEfCEeeZp8iWItej5w" name="countryName" label="countryName" length="52" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Keu0dUfCEeeZp8iWItej5w" name="countryPopulation" label="countryPopulation" length="11" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Keu0dkfCEeeZp8iWItej5w" name="cityName" label="cityName" length="35" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Keu0d0fCEeeZp8iWItej5w" name="CityPopulation" label="CityPopulation" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Keu0eEfCEeeZp8iWItej5w" name="language" label="language" length="30" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_cW5VYEoeEeeoJ892gj0_oQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_cW5VYUoeEeeoJ892gj0_oQ" comment="" name="HDP_Local_2_6_User" prompt="HDP_Local_2_6_User?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_cW5VYkoeEeeoJ892gj0_oQ" comment="" name="HDP_Local_2_6_StagingDirectory" prompt="HDP_Local_2_6_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+  <contextParameter xmi:id="_cW5VY0oeEeeoJ892gj0_oQ" comment="" name="HDP_Local_2_6_ResourceManagerScheduler" prompt="HDP_Local_2_6_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="sandbox.hortonworks.com:8030"/>
+  <contextParameter xmi:id="_cW5VZEoeEeeoJ892gj0_oQ" comment="" name="HDP_Local_2_6_JobHistory" prompt="HDP_Local_2_6_JobHistory?" promptNeeded="false" type="id_String" value="sandbox.hortonworks.com:10020"/>
+  <contextParameter xmi:id="_cW5VZUoeEeeoJ892gj0_oQ" comment="" name="HDP_Local_2_6_ResourceManager" prompt="HDP_Local_2_6_ResourceManager?" promptNeeded="false" type="id_String" value="sandbox.hortonworks.com:8032"/>
+  <contextParameter xmi:id="_cW5VZkoeEeeoJ892gj0_oQ" comment="" name="HDP_Local_2_6_NameNodeUri" prompt="HDP_Local_2_6_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://sandbox.hortonworks.com:8020"/>
+</talendfile:ContextType>

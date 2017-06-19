@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_0KTyEU1REeeQlbaOTH5Thg" name="CDH_Sandbox_HIVE" id="_0KNEYE1REeeQlbaOTH5Thg" label="CDH_Sandbox_HIVE" dataPackage="_4PnsQFLQEeepwNnHeePSlw" DatabaseType="Hive" DriverClass="org.apache.hadoop.hive.jdbc.HiveDriver" URL="jdbc:hive2://quickstart.cloudera:10000/default" dbVersionString="STANDALONE" Port="10000" Username="cloudera" Password="" ServerName="quickstart.cloudera" SID="default" SqlSynthax="SQL Syntax" DbmsId="hive_id" ProductId="HIVE" StandardSQL="true" UiSchema="default">
+    <taggedValue xmi:id="_3PSQoFLQEeepwNnHeePSlw" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_4MPBEFLQEeepwNnHeePSlw" tag="Status" value=""/>
+    <taggedValue xmi:id="_4MPBEVLQEeepwNnHeePSlw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_4MPBElLQEeepwNnHeePSlw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_4MPBE1LQEeepwNnHeePSlw" tag="Description" value=""/>
+    <taggedValue xmi:id="_4MPBFFLQEeepwNnHeePSlw" tag="Author" value=""/>
+    <taggedValue xmi:id="_4MPBFVLQEeepwNnHeePSlw" tag="otherParameter"/>
+    <taggedValue xmi:id="_4NGjwFLQEeepwNnHeePSlw" tag="DB ProductName" value="Apache Hive"/>
+    <taggedValue xmi:id="_4NGjwVLQEeepwNnHeePSlw" tag="DB ProductVersion" value="1.1.0-cdh5.10.0"/>
+    <parameters xmi:id="_0KTyEk1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_USE_YARN" value="true"/>
+    <parameters xmi:id="_0KTyE01REeeQlbaOTH5Thg" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="quickstart.cloudera:8030"/>
+    <parameters xmi:id="_0KTyFE1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="true"/>
+    <parameters xmi:id="_0KTyFU1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_NAME_NODE_URL" value="hdfs://quickstart.cloudera:8020"/>
+    <parameters xmi:id="_0KTyFk1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_USERNAME" value="cloudera"/>
+    <parameters xmi:id="_0KTyF01REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HADOOP_CLUSTER_ID" value="_liGLgE1REeeQlbaOTH5Thg"/>
+    <parameters xmi:id="_0KTyGE1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_JOB_HISTORY_PRINCIPAL" value="mapred/_HOST@EXAMPLE.COM"/>
+    <parameters xmi:id="_0KTyGU1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HBASE_VERSION" value="Cloudera_CDH5_8"/>
+    <parameters xmi:id="_0KTyGk1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_JOB_TRACKER_URL" value="quickstart.cloudera:8032"/>
+    <parameters xmi:id="_0KTyG01REeeQlbaOTH5Thg" key="CONN_PARA_KEY_JOBHISTORY_ADDRESS" value="quickstart.cloudera:10020"/>
+    <parameters xmi:id="_0KTyHE1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HIVE_VERSION" value="Cloudera_CDH5_8"/>
+    <parameters xmi:id="_0KTyHU1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_USE_DATANODE_HOSTNAME" value="true"/>
+    <parameters xmi:id="_0KTyHk1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_DB_SERVER" value="quickstart.cloudera"/>
+    <parameters xmi:id="_0KTyH01REeeQlbaOTH5Thg" key="CONN_PARA_KEY_DB_TYPE" value="Hive"/>
+    <parameters xmi:id="_0KTyIE1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_MAPRDB_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+    <parameters xmi:id="_0KTyIU1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_JOB_TRACKER_PRINCIPAL" value="yarn/_HOST@EXAMPLE.COM"/>
+    <parameters xmi:id="_0KTyIk1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HIVE_DISTRIBUTION" value="CLOUDERA"/>
+    <parameters xmi:id="_0KTyI01REeeQlbaOTH5Thg" key="CONN_PARA_KEY_MAPRDB_VERSION" value="Cloudera_CDH5_8"/>
+    <parameters xmi:id="_0KTyJE1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_MAPRDB_DISTRIBUTION" value="CLOUDERA"/>
+    <parameters xmi:id="_0KTyJU1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_USE_KRB" value="false"/>
+    <parameters xmi:id="_0KTyJk1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HBASE_DISTRIBUTION" value="CLOUDERA"/>
+    <parameters xmi:id="_0KTyJ01REeeQlbaOTH5Thg" key="CONN_PARA_KEY_STAGING_DIRECTORY" value="/user"/>
+    <parameters xmi:id="_0KTyKE1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_NAME_NODE_PRINCIPAL" value="hdfs/_HOST@EXAMPLE.COM"/>
+    <parameters xmi:id="_0KTyKU1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_DB_PRODUCT" value="HIVE"/>
+    <parameters xmi:id="_0KTyKk1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HIVE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+    <parameters xmi:id="_0KTyK01REeeQlbaOTH5Thg" key="HIVE_AUTHENTICATION_METASTOREURL" value="thrift://quickstart.cloudera:9083"/>
+    <parameters xmi:id="_0KTyLE1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HBASE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+    <parameters xmi:id="_0KTyLU1REeeQlbaOTH5Thg" key="HIVE_SERVER_VERSION" value="HIVE2"/>
+    <parameters xmi:id="_0KTyLk1REeeQlbaOTH5Thg" key="CONN_PARA_KEY_HIVE_MODE" value="STANDALONE"/>
+    <parameters xmi:id="_3L_sEFLQEeepwNnHeePSlw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+    <parameters xmi:id="_3N0RAFLQEeepwNnHeePSlw" key="HIVE_AUTHENTICATION_HIVEPRINCIPLA" value=""/>
+    <parameters xmi:id="_3N04EFLQEeepwNnHeePSlw" key="HIVE_AUTHENTICATION_DRIVERCLASS" value=""/>
+    <parameters xmi:id="_3N04EVLQEeepwNnHeePSlw" key="HIVE_AUTHENTICATION_USERNAME" value=""/>
+    <parameters xmi:id="_3N04ElLQEeepwNnHeePSlw" key="HIVE_AUTHENTICATION_PASSWORD" value=""/>
+    <parameters xmi:id="_3N04FVLQEeepwNnHeePSlw" key="CONN_PARA_KEY_KEYTAB_PRINCIPLA" value=""/>
+    <parameters xmi:id="_3N04FlLQEeepwNnHeePSlw" key="CONN_PARA_KEY_KEYTAB" value=""/>
+    <parameters xmi:id="_3N04F1LQEeepwNnHeePSlw" key="HIVE_EXECUTION_ENGINE"/>
+    <parameters xmi:id="_3N9a8FLQEeepwNnHeePSlw" key="CONN_PARA_KEY_USE_SSL" value="false"/>
+    <parameters xmi:id="_6ZX4wFUaEeev44rBQLO_Rg" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
+    <parameters xmi:id="_6ZX4wVUaEeev44rBQLO_Rg" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_4PnsQFLQEeepwNnHeePSlw" name="default" dataManager="_0KTyEU1REeeQlbaOTH5Thg">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_6-Ig8FLQEeepwNnHeePSlw" name="customers" id="_6-BzQFLQEeepwNnHeePSlw" label="customers" tableType="TABLE">
+      <taggedValue xmi:id="_6-Ig8VLQEeepwNnHeePSlw" tag="Comment" value=""/>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6-Ig8lLQEeepwNnHeePSlw" name="customernumber" label="customernumber" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_6-Ig81LQEeepwNnHeePSlw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6-Ig9FLQEeepwNnHeePSlw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6-Ig9VLQEeepwNnHeePSlw" name="INT" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6-Ig9lLQEeepwNnHeePSlw" name="customername" label="customername" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_6-Ig91LQEeepwNnHeePSlw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6-Ig-FLQEeepwNnHeePSlw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6-Ig-VLQEeepwNnHeePSlw" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6-Ig-lLQEeepwNnHeePSlw" name="contactlastname" label="contactlastname" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_6-Ig-1LQEeepwNnHeePSlw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6-Ig_FLQEeepwNnHeePSlw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6-Ig_VLQEeepwNnHeePSlw" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6-Ig_lLQEeepwNnHeePSlw" name="contactfirstname" label="contactfirstname" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_6-Ig_1LQEeepwNnHeePSlw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6-IhAFLQEeepwNnHeePSlw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6-IhAVLQEeepwNnHeePSlw" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6-IhAlLQEeepwNnHeePSlw" name="phone" label="phone" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_6-IhA1LQEeepwNnHeePSlw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6-IhBFLQEeepwNnHeePSlw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6-IhBVLQEeepwNnHeePSlw" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6-IhBlLQEeepwNnHeePSlw" name="addressline1" label="addressline1" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_6-IhB1LQEeepwNnHeePSlw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6-IhCFLQEeepwNnHeePSlw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6-IhCVLQEeepwNnHeePSlw" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6-IhClLQEeepwNnHeePSlw" name="addressline2" label="addressline2" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_6-IhC1LQEeepwNnHeePSlw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6-IhDFLQEeepwNnHeePSlw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6-IhDVLQEeepwNnHeePSlw" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6-IhDlLQEeepwNnHeePSlw" name="city" label="city" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_6-IhD1LQEeepwNnHeePSlw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6-IhEFLQEeepwNnHeePSlw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6-IhEVLQEeepwNnHeePSlw" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6-IhElLQEeepwNnHeePSlw" name="state" label="state" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_6-IhE1LQEeepwNnHeePSlw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6-IhFFLQEeepwNnHeePSlw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6-IhFVLQEeepwNnHeePSlw" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6-IhFlLQEeepwNnHeePSlw" name="postalcode" label="postalcode" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_6-IhF1LQEeepwNnHeePSlw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6-IhGFLQEeepwNnHeePSlw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6-IhGVLQEeepwNnHeePSlw" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6-IhGlLQEeepwNnHeePSlw" name="country" label="country" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_6-IhG1LQEeepwNnHeePSlw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6-IhHFLQEeepwNnHeePSlw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6-IhHVLQEeepwNnHeePSlw" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6-IhHlLQEeepwNnHeePSlw" name="salesrepemployeenumber" label="salesrepemployeenumber" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_6-IhH1LQEeepwNnHeePSlw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6-IhIFLQEeepwNnHeePSlw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6-IhIVLQEeepwNnHeePSlw" name="INT" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6-IhIlLQEeepwNnHeePSlw" name="creditlimit" label="creditlimit" length="10" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <taggedValue xmi:id="_6-IhI1LQEeepwNnHeePSlw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6-IhJFLQEeepwNnHeePSlw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6-IhJVLQEeepwNnHeePSlw" name="DECIMAL" numericPrecision="2" numericPrecisionRadix="10" javaDataType="3" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Schema>
+</xmi:XMI>

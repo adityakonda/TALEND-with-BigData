@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_sCJLoEVPEee0XqjFbtTzZQ" name="CSVTestData" dataPackage="_sCJLoUVPEee0XqjFbtTzZQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/adity/Desktop/Talend/Datasets/TestData.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_sCJLoUVPEee0XqjFbtTzZQ" name="default" dataManager="_sCJLoEVPEee0XqjFbtTzZQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_sCJLokVPEee0XqjFbtTzZQ" id="_YdzpUEVPEee0XqjFbtTzZQ" comment="this is a comment for csvtestdata" label="CSVTestData">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sCJLo0VPEee0XqjFbtTzZQ" label="id" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sCJLpEVPEee0XqjFbtTzZQ" label="first_name" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sCJLpUVPEee0XqjFbtTzZQ" label="last_name" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sCJLpkVPEee0XqjFbtTzZQ" label="email" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sCJLp0VPEee0XqjFbtTzZQ" label="gender" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sCJLqEVPEee0XqjFbtTzZQ" label="ip_address" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
