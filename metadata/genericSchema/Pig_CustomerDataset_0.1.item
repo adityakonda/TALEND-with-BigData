@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_eVCAAFXlEeeI4KZZqsbTLA" dataPackage="_eVCAAVXlEeeI4KZZqsbTLA"/>
+  <TalendMetadata:GenericPackage xmi:id="_eVCAAVXlEeeI4KZZqsbTLA" dataManager="_eVCAAFXlEeeI4KZZqsbTLA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_eVCAAlXlEeeI4KZZqsbTLA" id="_eU-VoFXlEeeI4KZZqsbTLA" label="pig_customerDataset">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eVCAA1XlEeeI4KZZqsbTLA" name="id" label="id" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_eVCABFXlEeeI4KZZqsbTLA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eVCABVXlEeeI4KZZqsbTLA" name="first_name" label="first_name" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_eVCABlXlEeeI4KZZqsbTLA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eVCAB1XlEeeI4KZZqsbTLA" name="gender" label="gender" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_eVCACFXlEeeI4KZZqsbTLA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eVCACVXlEeeI4KZZqsbTLA" name="product" label="product" length="35" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_eVCAClXlEeeI4KZZqsbTLA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eVCAC1XlEeeI4KZZqsbTLA" name="state" label="state" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_eVCADFXlEeeI4KZZqsbTLA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

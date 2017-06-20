@@ -22,6 +22,7 @@
     <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
     <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
     <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
     <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
     <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
     <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
@@ -103,6 +104,13 @@
     <routinesParameter id="_dhvvMEVNEee0XqjFbtTzZQ" name="TalendDataGenerator"/>
     <routinesParameter id="_dh5gMEVNEee0XqjFbtTzZQ" name="TalendDate"/>
     <routinesParameter id="_diDRMEVNEee0XqjFbtTzZQ" name="TalendString"/>
+    <routinesParameter id="_iObZ4FUpEeeq4toxUPR8Rg" name="DQTechnical"/>
+    <routinesParameter id="_iJiS0FUpEeeq4toxUPR8Rg" name="DataMasking"/>
+    <routinesParameter id="_iN0V4FUpEeeq4toxUPR8Rg" name="DataQualityDependencies"/>
+    <routinesParameter id="_iNlsYFUpEeeq4toxUPR8Rg" name="DataQuality"/>
+    <routinesParameter id="_iOK7MFUpEeeq4toxUPR8Rg" name="DqStringHandling"/>
+    <routinesParameter id="_iOpcUFUpEeeq4toxUPR8Rg" name="MDM"/>
+    <routinesParameter id="_iO9lYFUpEeeq4toxUPR8Rg" name="SQLike"/>
   </parameters>
   <node componentName="tSqoopImport" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSqoopImport_1" show="false"/>
@@ -204,6 +212,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSqoopImport_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>

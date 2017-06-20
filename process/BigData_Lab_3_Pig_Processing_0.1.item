@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendPigMap="http://www.talend.org/pigmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -22,6 +22,7 @@
     <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
     <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
     <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
     <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
     <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
     <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
@@ -103,24 +104,53 @@
     <routinesParameter id="_dhvvMEVNEee0XqjFbtTzZQ" name="TalendDataGenerator"/>
     <routinesParameter id="_dh5gMEVNEee0XqjFbtTzZQ" name="TalendDate"/>
     <routinesParameter id="_diDRMEVNEee0XqjFbtTzZQ" name="TalendString"/>
+    <routinesParameter id="_iObZ4FUpEeeq4toxUPR8Rg" name="DQTechnical"/>
+    <routinesParameter id="_iJiS0FUpEeeq4toxUPR8Rg" name="DataMasking"/>
+    <routinesParameter id="_iN0V4FUpEeeq4toxUPR8Rg" name="DataQualityDependencies"/>
+    <routinesParameter id="_iNlsYFUpEeeq4toxUPR8Rg" name="DataQuality"/>
+    <routinesParameter id="_iOK7MFUpEeeq4toxUPR8Rg" name="DqStringHandling"/>
+    <routinesParameter id="_iOpcUFUpEeeq4toxUPR8Rg" name="MDM"/>
+    <routinesParameter id="_iO9lYFUpEeeq4toxUPR8Rg" name="SQLike"/>
   </parameters>
-  <node componentName="tPigLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="288">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="BigData_Lab3_WritingHDFS"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_A-JbAFXkEeeI4KZZqsbTLA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tPigLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPigLoad_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_0KTyEE1REeeQlbaOTH5Thg" show="false"/>
+    <elementParameter field="TECHNICAL" name="MAIN_SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="MAIN_SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_eU-VoVXlEeeI4KZZqsbTLA - pig_customerDataset" show="false"/>
     <elementParameter field="CHECK" name="LOCAL" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA"/>
     <elementParameter field="CLOSED_LIST" name="PIG_VERSION" value="Cloudera_CDH5_8"/>
     <elementParameter field="HADOOP_DISTRIBUTION" name="PIG" value=""/>
     <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="ENGINE" value="MAPREDUCE" show="false"/>
-    <elementParameter field="CHECK" name="USE_YARN" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_YARN" value="true" show="false"/>
     <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="LOAD" value="PigStorage"/>
     <elementParameter field="TEXT" name="CUSTOM_LOADER" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
     <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://quickstart.cloudera:8020&quot;"/>
-    <elementParameter field="TEXT" name="MAPRED_JOB_TRACKER" value="&quot;localhost:8021&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_TRACKER" value="&quot;quickstart.cloudera:8032&quot;" show="false"/>
     <elementParameter field="TEXT" name="RESOURCE_MANAGER" value="&quot;quickstart.cloudera:8032&quot;"/>
     <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="true"/>
     <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;quickstart.cloudera:10020&quot;"/>
@@ -142,8 +172,8 @@
     <elementParameter field="PASSWORD" name="WASB_PASSWORD" value="0RMsyjmybrE=" show="false"/>
     <elementParameter field="TEXT" name="REMOTE_FOLDER" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="USE_KRB" value="false"/>
-    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
-    <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" value="&quot;jt/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;hdfs/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
     <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
     <elementParameter field="TEXT" name="JOBHISTORY_PRINCIPAL" value="&quot;mapred/_HOST@EXAMPLE.COM&quot;" show="false"/>
     <elementParameter field="LABEL" name="NOTE_HBASEMASTER_KERBEROS" value="Hbase kerberos settings are required only when the Load/Store function is set to HBaseStorage.&#xA;&#x9;&#x9;&#x9;" show="false"/>
@@ -157,9 +187,9 @@
     <elementParameter field="TEXT" name="MAPRTICKET_USERNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="0RMsyjmybrE=" show="false"/>
     <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
-    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="" show="false"/>
     <elementParameter field="CHECK" name="S3_LOCATION_LOAD" value="false"/>
-    <elementParameter field="TEXT" name="INPUT_FILENAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="INPUT_FILENAME" value="&quot;/user/cloudera/Pig_CustomerDataset&quot;"/>
     <elementParameter field="TEXT" name="S3_BUCKET_LOAD" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="S3_USERNAME_LOAD" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="S3_PASSWORD_LOAD" value="0RMsyjmybrE=" show="false"/>
@@ -175,9 +205,20 @@
     <elementParameter field="TEXT" name="ZNODE_PARENT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="HBASE_TABLE" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="LOAD_KEY" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MAPPING" show="false"/>
-    <elementParameter field="COLUMN_LIST" name="KEYCOLUMN" value="" show="false"/>
-    <elementParameter field="COLUMN_LIST" name="VALUECOLUMN" value="" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="FAMILY_COLUMN" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="first_name"/>
+      <elementValue elementRef="FAMILY_COLUMN" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gender"/>
+      <elementValue elementRef="FAMILY_COLUMN" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product"/>
+      <elementValue elementRef="FAMILY_COLUMN" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
+      <elementValue elementRef="FAMILY_COLUMN" value=""/>
+    </elementParameter>
+    <elementParameter field="COLUMN_LIST" name="KEYCOLUMN" value="id" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="VALUECOLUMN" value="id" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CLOSED_LIST" name="TEZ_LIB" value="INSTALL" show="false"/>
     <elementParameter field="DIRECTORY_HADOOP" name="TEZ_LIB_FOLDER" value="&quot;/tmp/{USERNAME}/talend_tez_libs/{custom|PIG_VERSION}&quot;" show="false"/>
@@ -191,7 +232,20 @@
     <elementParameter field="TABLE" name="ADVANCED_PROPERTIES"/>
     <elementParameter field="CHECK" name="DEFINE_REGISTER_JAR" value="false" show="false"/>
     <elementParameter field="LABEL" name="REGISTER_JAR_NOTE" value="When filling in the Jar path information below, make sure that the JAR files are available on the execution server.&#xA;&#x9;&#x9;&#x9;" show="false"/>
-    <elementParameter field="TABLE" name="REGISTER_JAR" show="false"/>
+    <elementParameter field="TABLE" name="REGISTER_JAR" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="hcatalog"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hive-exec"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hive-metastore"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="jdo2-api"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libfb303"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libthrift"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+    </elementParameter>
     <elementParameter field="TABLE" name="HBASESTORAGE_PARAMETER" show="false"/>
     <elementParameter field="TEXT" name="CLASSPATH_SEPARATOR" value="&quot;:&quot;"/>
     <elementParameter field="TEXT" name="MAPRED_JOB_MAP_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
@@ -205,8 +259,20 @@
     <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
     <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tPigLoad_1"/>
-    <metadata connector="PIGCOMBINE" name="PIGCOMBINE"/>
+    <metadata connector="FLOW" label="pig_customerDataset" name="tPigLoad_1">
+      <column comment="" key="false" length="2" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="first_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="state" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="PIGCOMBINE" label="pig_customerDataset" name="PIGCOMBINE">
+      <column comment="" key="false" length="2" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="first_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="state" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
     <metadata connector="REGISTERJAR" name="REGISTERJAR">
       <column defaultValue="" key="false" length="255" name="hcatalog" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="hive-exec" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -216,6 +282,203 @@
       <column defaultValue="" key="false" length="255" name="libthrift" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tPigFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPigFilterRow_1" show="false"/>
+    <elementParameter field="TABLE" name="FILTER_CONFIG" show="false">
+      <elementValue elementRef="LOGICAL" value="AND"/>
+      <elementValue elementRef="COLUMN_NAME" value="state"/>
+      <elementValue elementRef="NOT" value="false"/>
+      <elementValue elementRef="OPERATOR" value="EQUAL"/>
+      <elementValue elementRef="VALUE" value="&quot;FL&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED_FILTER" value="true"/>
+    <elementParameter field="TEXT" name="ADVANCED_FILTER" value="&quot;state matches 'FL'&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="pig_customerDataset" name="tPigFilterRow_1">
+      <column comment="" key="false" length="2" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="first_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="state" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="PIGCOMBINE" label="pig_customerDataset" name="PIGCOMBINE">
+      <column comment="" key="false" length="2" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="first_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="state" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPigMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPigMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="PIGCOMBINE" label="MappingOutput" name="MappingOutput">
+      <column comment="" key="false" length="6" name="gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendPigMap:PigMapData">
+      <inputTables name="row2">
+        <nodes name="id" type="id_Integer" nullable="true"/>
+        <nodes name="first_name" type="id_String" nullable="true"/>
+        <nodes name="gender" type="id_String" nullable="true" outgoingConnections="//@node.3/@nodeData/@connections.0"/>
+        <nodes name="product" type="id_String" nullable="true" outgoingConnections="//@node.3/@nodeData/@connections.1"/>
+        <nodes name="state" type="id_String" nullable="true"/>
+      </inputTables>
+      <outputTables name="MappingOutput">
+        <nodes name="gender" expression="row2.gender" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0"/>
+        <nodes name="product" expression="row2.product" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1"/>
+      </outputTables>
+      <varTables name="Define functions"/>
+      <connections xsi:type="TalendPigMap:Connection" source="//@node.3/@nodeData/@inputTables.0/@nodes.2" target="//@node.3/@nodeData/@outputTables.0/@nodes.0"/>
+      <connections xsi:type="TalendPigMap:Connection" source="//@node.3/@nodeData/@inputTables.0/@nodes.3" target="//@node.3/@nodeData/@outputTables.0/@nodes.1"/>
+    </nodeData>
+  </node>
+  <node componentName="tPigAggregate" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPigAggregate_1" show="false"/>
+    <elementParameter field="TABLE" name="KEY_FIELDS">
+      <elementValue elementRef="INPUT_COLUMN" value="product"/>
+      <elementValue elementRef="INPUT_COLUMN" value="gender"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="Count"/>
+      <elementValue elementRef="FUNCTION" value="COUNT"/>
+      <elementValue elementRef="INPUT_COLUMN" value="product"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="INCREASE_PARALLELISM" value="false"/>
+    <elementParameter field="TEXT" name="REDUCE_NUMBER" value="2" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="MappingOutput" name="tPigAggregate_1">
+      <column comment="" key="false" length="6" name="gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Count" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="30" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="PIGCOMBINE" label="MappingOutput" name="PIGCOMBINE">
+      <column comment="" key="false" length="6" name="gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Count" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="30" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPigSort" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPigSort_1" show="false"/>
+    <elementParameter field="TABLE" name="SORT_KEY">
+      <elementValue elementRef="INPUT_COLUMN" value="product"/>
+      <elementValue elementRef="ORDER" value="ASC"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="INCREASE_PARALLELISM" value="false"/>
+    <elementParameter field="TEXT" name="REDUCE_NUMBER" value="2" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="MappingOutput" name="tPigSort_1">
+      <column comment="" key="false" length="6" name="gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Count" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="30" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="PIGCOMBINE" label="MappingOutput" name="PIGCOMBINE">
+      <column comment="" key="false" length="6" name="gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Count" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="30" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPigStoreResult" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPigStoreResult_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_0KTyEE1REeeQlbaOTH5Thg" show="false"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="PIG" value=""/>
+    <elementParameter field="CHECK" name="S3_LOCATION" value="false"/>
+    <elementParameter field="TEXT" name="OUTPUT_FILENAME" value="&quot;/user/cloudera/pig/output&quot;"/>
+    <elementParameter field="TEXT" name="S3_BUCKET" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="S3_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="S3_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="CHECK" name="RM_OUTPUT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="STORE" value="PigStorage"/>
+    <elementParameter field="TEXT" name="CUSTOM_STORER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELD_SEPARATOR_CHAR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="THRIFT_SERVER" value="&quot;thrift://localhost:9083&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATABASE_NAME" value="&quot;default&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TABLE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PARTITION_KEYVALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="HBASE_VERSION" value="EMR_5_0_0" show="false"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="PIGOUTPUT" value="" show="false"/>
+    <elementParameter field="TABLE" name="CUSTOM_JARS" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="ASSOCIATED_PIG_LOAD" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PARQUET_COMPRESSION" value="UNCOMPRESSED" show="false"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_QUORUM" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_CLIENT_PORT" value="&quot;2181&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_ZNODE_PARENT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ZNODE_PARENT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HBASE_TABLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="ROWKEY_COLUMN" value="gender" show="false"/>
+    <elementParameter field="CHECK" name="CONTAIN_ROW_KEY_COLUMN_IN_HBASE_COLUMN" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="gender"/>
+      <elementValue elementRef="FAMILY_COLUMN" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product"/>
+      <elementValue elementRef="FAMILY_COLUMN" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Count"/>
+      <elementValue elementRef="FAMILY_COLUMN" value=""/>
+    </elementParameter>
+    <elementParameter field="COLUMN_LIST" name="KEYCOLUMN" value="gender" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="VALUECOLUMN" value="gender" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR"/>
+    <elementParameter field="CHECK" name="DEFINE_REGISTER_JAR" value="false" show="false"/>
+    <elementParameter field="LABEL" name="REGISTER_JAR_NOTE" value="When filling in the Jar path information below, make sure that the JAR files are available on the execution server.&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TABLE" name="REGISTER_JAR" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="datanucleus-core"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datanucleus-rdbms"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hcatalog"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hive-exec"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hive-metastore"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="HBASESTORAGE_PARAMETER" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="MappingOutput" name="tPigStoreResult_1">
+      <column comment="" key="false" length="6" name="gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Count" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="30" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REGISTERJAR" name="REGISTERJAR">
+      <column defaultValue="" key="false" length="255" name="datanucleus-core" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="datanucleus-rdbms" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="hcatalog" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="hive-exec" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="hive-metastore" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tPigLoad_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="PIGCOMBINE" label="row1" lineStyle="0" metaname="PIGCOMBINE" offsetLabelX="0" offsetLabelY="0" source="tPigLoad_1" target="tPigFilterRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="PIGCOMBINE" label="row2" lineStyle="0" metaname="PIGCOMBINE" offsetLabelX="0" offsetLabelY="0" source="tPigFilterRow_1" target="tPigMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="PIGCOMBINE" label="MappingOutput" lineStyle="0" metaname="MappingOutput" offsetLabelX="0" offsetLabelY="0" source="tPigMap_1" target="tPigAggregate_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="MappingOutput" show="false"/>
+  </connection>
+  <connection connectorName="PIGCOMBINE" label="row3" lineStyle="0" metaname="PIGCOMBINE" offsetLabelX="0" offsetLabelY="0" source="tPigAggregate_1" target="tPigSort_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="PIGCOMBINE" label="row4" lineStyle="0" metaname="PIGCOMBINE" offsetLabelX="0" offsetLabelY="0" source="tPigSort_1" target="tPigStoreResult_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPigLoad_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
