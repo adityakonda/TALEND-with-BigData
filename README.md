@@ -2,6 +2,16 @@
 
 ## Data Integration - Lab ##
 
+1. **Getting Started**
+
+2. **Transforming Data**
+3. **Joing Data Examples**
+4. **Filtering Data**
+5. **Prepare For Deployment**
+6. **Setting Up Sales File**
+7. **Working with Databases**
+8. **Master Job**
+
 ## Big Data - Lab ##
 
 1. **Reading & Writing HDFS Files**
