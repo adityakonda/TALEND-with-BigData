@@ -386,6 +386,66 @@
       <relatedItems xmi:id="_V_qtB1XkEeeI4KZZqsbTLA" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_V_qtCFXkEeeI4KZZqsbTLA" id="_4L7XcFXjEeeI4KZZqsbTLA - pig_customerDataset" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_tTpSYFX7EeeI4KZZqsbTLA">
+      <baseItem xmi:id="_tTpSYVX7EeeI4KZZqsbTLA" id="_YC878FX7EeeI4KZZqsbTLA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_tTpSYlX7EeeI4KZZqsbTLA" id="_0KTyEE1REeeQlbaOTH5Thg" version="Latest" type="property"/>
+      <relatedItems xmi:id="_tTpSY1X7EeeI4KZZqsbTLA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpSZFX7EeeI4KZZqsbTLA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpSZVX7EeeI4KZZqsbTLA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpSZlX7EeeI4KZZqsbTLA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpSZ1X7EeeI4KZZqsbTLA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpSaFX7EeeI4KZZqsbTLA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpSaVX7EeeI4KZZqsbTLA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpSalX7EeeI4KZZqsbTLA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpSa1X7EeeI4KZZqsbTLA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpSbFX7EeeI4KZZqsbTLA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpSbVX7EeeI4KZZqsbTLA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpSblX7EeeI4KZZqsbTLA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpSb1X7EeeI4KZZqsbTLA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpScFX7EeeI4KZZqsbTLA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tTpScVX7EeeI4KZZqsbTLA" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_6cneUFX8EeeI4KZZqsbTLA" id="_eU-VoVXlEeeI4KZZqsbTLA - pig_customerDataset" version="Latest" type="schema"/>
+    </ItemsRelations>
+    <ItemsRelations xmi:id="_NksF8FX-EeeI4KZZqsbTLA">
+      <baseItem xmi:id="_NksF8VX-EeeI4KZZqsbTLA" id="_Hhje0FX-EeeI4KZZqsbTLA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_NksF8lX-EeeI4KZZqsbTLA" id="_0KTyEE1REeeQlbaOTH5Thg" version="Latest" type="property"/>
+      <relatedItems xmi:id="_NksF81X-EeeI4KZZqsbTLA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksF9FX-EeeI4KZZqsbTLA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksF9VX-EeeI4KZZqsbTLA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksF9lX-EeeI4KZZqsbTLA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksF91X-EeeI4KZZqsbTLA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksF-FX-EeeI4KZZqsbTLA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksF-VX-EeeI4KZZqsbTLA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksF-lX-EeeI4KZZqsbTLA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksF-1X-EeeI4KZZqsbTLA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksF_FX-EeeI4KZZqsbTLA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksF_VX-EeeI4KZZqsbTLA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksF_lX-EeeI4KZZqsbTLA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksF_1X-EeeI4KZZqsbTLA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksGAFX-EeeI4KZZqsbTLA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksGAVX-EeeI4KZZqsbTLA" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NksGAlX-EeeI4KZZqsbTLA" id="_eU-VoVXlEeeI4KZZqsbTLA - pig_customerDataset" version="Latest" type="schema"/>
+    </ItemsRelations>
+    <ItemsRelations xmi:id="_q6OEAFaXEeeondJ0fjO_CA">
+      <baseItem xmi:id="_q6OrEFaXEeeondJ0fjO_CA" id="_I_H3gFaXEeeondJ0fjO_CA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_q6OrEVaXEeeondJ0fjO_CA" id="_0KTyEE1REeeQlbaOTH5Thg" version="Latest" type="property"/>
+      <relatedItems xmi:id="_q6OrElaXEeeondJ0fjO_CA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrE1aXEeeondJ0fjO_CA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrFFaXEeeondJ0fjO_CA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrFVaXEeeondJ0fjO_CA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrFlaXEeeondJ0fjO_CA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrF1aXEeeondJ0fjO_CA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrGFaXEeeondJ0fjO_CA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrGVaXEeeondJ0fjO_CA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrGlaXEeeondJ0fjO_CA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrG1aXEeeondJ0fjO_CA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrHFaXEeeondJ0fjO_CA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrHVaXEeeondJ0fjO_CA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrHlaXEeeondJ0fjO_CA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrH1aXEeeondJ0fjO_CA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrIFaXEeeondJ0fjO_CA" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_q6OrIVaXEeeondJ0fjO_CA" id="_eU-VoVXlEeeI4KZZqsbTLA - pig_customerDataset" version="Latest" type="schema"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_da6ucEVNEee0XqjFbtTzZQ" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_da6ucUVNEee0XqjFbtTzZQ" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
     <migrationTask xmi:id="_da6uckVNEee0XqjFbtTzZQ" id="org.talend.designer.maven.ui.ConfigMavenRepositoryRemove" breaks="6.0.1" version="6.0.2" status="ok"/>
